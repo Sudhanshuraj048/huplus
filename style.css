@@ -17,9 +17,7 @@ input[type=text] {
 a{
     cursor: pointer;
 }
-.hide{
-    display:none;
-}
+
 .formadd{
     display: none;
 }
