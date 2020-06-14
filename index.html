@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huplus Table</title>
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+      <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+</head>   
+<body>
+    <div class="container formadd" id="formfill">
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        <div>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <div  class="form-action-buttons">
+            <input class="btn" type="submit" value="Okay" >
+            <input class="btn" type="button" onclick="cancel();" value="Cancel" />
+        </div>
+    </form>
+    </div>
+    
+    <div class="container">
+      <input class="btn addbutton" type="button" onclick="add();" value="Add"/>
+
+    </div>
+    <div class="container d-flex">
+        <table class="table col-lg-12 col-md-12 col-12" id="list">
+          
+            <thead class="thead ">
+              
+              <tr>
+                <th>Sr No.</th>
+                <th>Name Field</th>
+                <th>Update</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody class="tbody" id="mytable">
+              
+            </tbody>
+            
+          </table>
+          
+    </div>
+    
+    <!-- Jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+     
+     <!-- Font Awesome -->
+    <script
+    src="https://kit.fontawesome.com/996973c893.js"
+    crossorigin="anonymous"
+    ></script>
+
+     <!---custom main js file-->
+     <script src="main.js"></script>
+</body> 
+</html>
